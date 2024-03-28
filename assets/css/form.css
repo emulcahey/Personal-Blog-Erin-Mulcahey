@@ -53,14 +53,40 @@ html {
   
 .left-box {
     color:#000000;
-    background-color: #459980;
     width: 50%;
     height: 100vh;
+    position: relative;
+    display: flex
 }
 
 .right-box {
     color:#000000;
-    background-color: #A459A9;
     width: 50%;
     height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    color:#111940;
+    font-size: 1.1em;
 }
