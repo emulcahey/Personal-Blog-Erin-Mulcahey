@@ -1,0 +1,52 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color:#111940;
+}
+
+a:visited {
+    color: #6c75a1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navBox{
+    text-align: right;
+    width: 100%;
+}
+
+.navBox a {
+    text-decoration: none;
+    color:#6c75a1
+}
+
+.navImage{
+    width: 20px;
+}
+
+.navBoxBorder {
+    display: flex;
+    border-bottom: thick solid #111940;
+    margin-bottom: 2px;
+}
+
+.dark-mode-body {
+    background-color: #111940;
+    color: #ffffff;
+}
+
+.dark-mode-form-container {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+.dark-mode-navBoxBorder {
+    border-bottom: thick solid #ffffff;
+}
