@@ -16,21 +16,39 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     var title = document.getElementById('title').value;
     var content = document.getElementById('content').value;
 
-    var timestamp = Math.floor(Date.now());
-    const blogPostItems = {
-        "username": username,
-        "title": title,
-        "content": content
+    if (!validate()){
     }
+    else {
 
-    localStorage.setItem(`blogPostItems_${timestamp}`, JSON.stringify(blogPostItems));
-    
-    //brings user to blog page
-    location.href = "../../blog.html";
+        var timestamp = Math.floor(Date.now());
+        const blogPostItems = {
+            "username": username,
+            "title": title,
+            "content": content
+        }
 
-    // Clear the form fields
-    document.getElementById('username').value = '';
-    document.getElementById('title').value = '';
-    document.getElementById('content').value = '';
+        localStorage.setItem(`blogPostItems_${timestamp}`, JSON.stringify(blogPostItems));
+        
+        //brings user to blog page
+        location.href = "../../blog.html";
 
+        // Clear the form fields
+        document.getElementById('username').value = '';
+        document.getElementById('title').value = '';
+        document.getElementById('content').value = '';
+    }
 });
+
+function validate() {
+   
+    if( document.getElementById('username').value.length == "" ) {
+       return false;
+    }
+    if( document.getElementById('title').value.length == "" ) {
+       return false;
+    }
+    if( document.getElementById('content').value.length == "" ) {
+       return false;
+    }
+    return( true );
+ }
