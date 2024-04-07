@@ -1,0 +1,85 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.footerBoxBorder {
+    display: flex;
+    border-top: thick solid #111940;
+    margin-top: 2px;
+}
+
+.pageTitle {
+    text-align: center;
+    font-weight: 700;
+}
+
+.mainContainerBorders {
+    display: flex;
+    border-top: thick solid #111940;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#mainContainer {
+    display: flex;
+    height: max-content;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.newDiv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    border-color: inherit;
+    border-style:solid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.postTitle {
+    display: flex;
+    border-bottom: dashed #111940;
+    width: 100vw;
+    color: inherit;
+    height: 40px;
+    text-align: left;
+}
+
+.postContent {
+    display: flex;
+    width: 100vw;
+    color: inherit;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.postUsername {
+    display: flex;
+    width: 100vw ;
+    color: inherit;
+    bottom: 0;
+    height: 30px;
+    text-align: left;
+}
+
+.dark-mode-mainContainerBorders {
+    border-top: thick solid white;
+    color: white;
+}
+
+.dark-mode-newDiv {
+    border-color: inherit;
+    color: inherit;
+}
+
+.dark-mode-postTitle {
+    border-bottom: dashed white;
+}
+
+.dark-mode-footerBoxBorder {
+    border-top: thick solid white;
+}
