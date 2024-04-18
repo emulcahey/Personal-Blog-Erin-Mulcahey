@@ -30,7 +30,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         localStorage.setItem(`blogPostItems_${timestamp}`, JSON.stringify(blogPostItems));
         
         //brings user to blog page
-        location.href = "../../blog.html";
+        location.href = "blog.html";
 
         // Clear the form fields
         document.getElementById('username').value = '';
